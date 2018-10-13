@@ -1,0 +1,87 @@
+/* I do a new stylesheet to not overwrite previus exersises */
+
+header {
+  width: 95%;
+  background: #75C3F3 ;
+  margin: 2em;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.navigation {
+  background: #4535AF;
+  width: 20%;
+  margin: 2%;
+  display: inline-block;
+  position: relative;
+  bottom: 70px;
+  height: 370px;
+}
+
+/* I use !important to override the in-line style used by previus exersise */
+.footer {
+  background: #AFA8DC !important;
+  width: 95%;
+  margin: 2em;
+  text-align: center;
+}
+
+.content {
+  background: #D4CDFC;
+  width: 95%;
+  height: 420px;
+  margin: 2em;
+  
+  
+}
+
+.content .header {
+  width: 95%;
+  margin: 1em;
+}
+
+.content-main {
+  display: inline-block;
+  width: 45%;
+  margin: 2%;
+  background: #8675F3;
+}
+
+.sidebar {
+  background: #FFF;
+  display: inline-block;
+  width: 20%;
+  margin: 2%;
+  border: 1px;
+  position: absolute;
+}
+
+.content .footer {
+  margin: 1em;
+}
+
+article {
+  margin: 1em;
+  text-align: justify;
+}
+
+aside p {
+  text-align: right;
+  margin: 1em;
+  
+}
+
+.navigation li {
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 50px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  display: inline-block;
+}
