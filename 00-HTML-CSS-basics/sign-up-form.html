@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sign Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>  
+  <!-- Create a "sign up" form with fields for: first name, last name, email,
+  birthday, a dropdown to choose your favourite sport, and a t|ext-area to 
+  include a small bio for the user. Add a button at the end to submit the form,
+  and another one to clear the form. Add relevant validation rules for all fields
+  (like required fields, valid email).-->
+<body>
+  
+  <section class="main" >
+    <h2>Sign Up</h2><br><br><br>
+    <form action="" method="POST">
+      
+      <div>
+        <label for="name">First name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your first name" autofocus required>
+      </div>
+      <div>
+        <label for="last-name">Last name:</label>
+        <input type="text" name="lname" id="last-name" placeholder="Enter your last name" required>
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="mail" id=email placeholder="your-mail@example.com" required>
+      </div>
+      <div>
+        <label for="birthday">Birthday</label>
+        <input type="date" name="bday" id="birthday" required>
+      </div>
+      <div>
+        <label for="fav-sport">Favourite sport:</label>
+        <select name="sport" id="fav-sport">
+          <option value="Football">Football</option>
+          <option value="Basketball">Basketball</option>
+          <option value="Swimming">Swimming</option>
+          <option value="Running">Running</option>
+          <option value="Other">Other</option>
+
+        </select>
+      </div>
+      <div>
+        <label for="desc">Description:</label>
+        <textarea name="desc" id="desc" minlength="15" maxlength="140" cols="30" rows="5" 
+        placeholder="Enter a short description about yourself"></textarea>
+      </div>
+      <button type="submit" name="submit-but">Submit</button>
+      <button type="reset" name="reset-but">Reset</button>
+      
+    </form>
+  </section>
+</body>
+</html>
