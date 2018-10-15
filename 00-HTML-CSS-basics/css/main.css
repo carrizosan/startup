@@ -17,8 +17,6 @@ header {
   display: inline-block;
   position: relative;
   bottom: 69px;
-  
-  
 }
 
 /* I use !important to override the in-line style used by previus exersise */
