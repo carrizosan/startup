@@ -12,11 +12,13 @@ header {
 .navigation {
   background: #4535AF;
   width: 20%;
+  height: 89%;
   margin: 2%;
   display: inline-block;
   position: relative;
-  bottom: 70px;
-  height: 370px;
+  bottom: 69px;
+  
+  
 }
 
 /* I use !important to override the in-line style used by previus exersise */
@@ -52,9 +54,10 @@ header {
   background: #FFF;
   display: inline-block;
   width: 20%;
+  height: 88%;
   margin: 2%;
-  border: 1px;
-  position: absolute;
+  bottom: 249px;
+  position: relative;
 }
 
 .content .footer {
