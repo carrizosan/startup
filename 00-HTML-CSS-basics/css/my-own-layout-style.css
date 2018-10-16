@@ -40,16 +40,16 @@ no longer need to worry about removing margins.   */
 @media (min-width: 40rem) {
   .column {
     float: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     
   }
   
-  .column.full { width: 100%; }
-  .column.two-thirds { width: 66.7%; }
-  .column.half { width: 50%; }
-  .column.third { width: 33.3%; }
-  .column.fourth { width: 25%; }
+  .column.full { width: 97.5%; }
+  .column.two-thirds { width: 65%; }
+  .column.half { width: 47.5%; }
+  .column.third { width: 30%; }
+  .column.fourth { width: 22.5%; }
   .column.flow-opposite { float: right; }  
 }
 
@@ -89,18 +89,7 @@ footer {
   text-align: center;
 }
 
-
-.column img {
-  width: 100%;
-  height: 30vh;
-  min-width: 200px;
-  min-height: 150px;
-  max-width: 150%;
-  max-height: 45vh;
-  filter: grayscale(100%);
-}
-
-aside {
+.container-article {
   width: 90%;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -112,15 +101,25 @@ aside {
   position: relative;
 }
 
+.column img {
+  width: 100%;
+  height: 30vh;
+  padding: 1%;
+  min-width: 200px;
+  min-height: 150px;
+  max-width: 150%;
+  max-height: 45vh;
+  filter: grayscale(100%);
+}
+
 .column-content {
-  width: 91%;
+  width: 98%;
   height: 15vh;
   top: 0;
   opacity: 0;
   position: absolute;
-  padding-left: 1rem;
-  padding-right: 2rem;
-  
+  margin: 1%;
+  text-align: center;
 }
 
 .column:hover .column-content {
