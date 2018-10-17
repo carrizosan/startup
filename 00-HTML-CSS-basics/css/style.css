@@ -1,0 +1,71 @@
+
+/* THIS STYLESHEET CORRESPONDS TO EXERSISES 2.1, 2.2 ADD 2.3 */
+
+/* 2.2  Exersise 1:  */
+header,
+footer, 
+aside, 
+nav {
+  background: #7A92DF;
+}
+
+/* 2.2  Exersise 2:  */
+html {
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2.2  Exersise 3:  */
+header, 
+footer {
+  text-align: center;
+}
+
+/* 2.3  Exersise 3:  */
+.header {
+  font-size: 46px;
+}
+
+.footer {
+  font-size: 10px;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.navigation {
+  font-size: 12px;
+}
+
+.sidebar {
+  font-size: 10px;
+}
+
+/* 2.3  Exersise 4:  */
+.footer, 
+.header, 
+.sidebar {
+  background: magenta;
+}
+
+/* 2.3  Exersise 5:  */
+.navigation {
+  background: blue;
+}
+
+/*
+2.3  Exersise 6. I could use this to win over classes added by point 3
+
+* {
+  font-size: 20px !important;
+}
+
+2.3  Exersise 7. I could override a inline-style with this:
+
+.footer {
+  background:magenta !important;
+}
+
+But using !important isn't a best-practice.
+*/
