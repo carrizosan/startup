@@ -5,3 +5,7 @@ section {
 .hidden-section {
   visibility: hidden;
 }
+
+.on-load {
+  visibility: visible;
+}
