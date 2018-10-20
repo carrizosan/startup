@@ -11,18 +11,16 @@ window.addEventListener("load", function(){
     fadeIn("hidden-element");
 });
 
-//Exersise 2
+//Exersise 2  v.2
 
 function showcaseAlert() {
     window.alert("This is an alert");
 }
 
-// In this case elem returns null. I added an atribute "onclick" on HTML button
-/*
 var elem = document.getElementById("but");  
 
-elem.addEventListener("onclick", function(){
+elem.addEventListener("click", function(){
     showcaseAlert();
 });
-*/
+
 
