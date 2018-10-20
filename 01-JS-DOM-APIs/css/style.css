@@ -9,3 +9,7 @@ section {
 .on-load {
   visibility: visible;
 }
+
+.but-div {
+  text-align: center;
+}
