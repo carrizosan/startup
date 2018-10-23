@@ -21,3 +21,17 @@ section {
   border: 1px solid red;
 }
 
+
+.table-section table,
+table td {
+  border: 1px solid black;
+  margin-left: 45%;
+}
+
+table td {
+  padding: 10px;
+}
+
+.table-section h2{
+  margin-top: 5%;
+}

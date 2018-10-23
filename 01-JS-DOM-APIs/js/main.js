@@ -125,3 +125,47 @@ elem.addEventListener("click", function(){
 });
 
 
+
+// Exersise 6. DOM Manipulation
+
+
+function newRandomMatrix(rows, columns) {
+    var matrix = [];
+    
+    for(var i=0; i<rows; i++) {
+        matrix[i] = new Array(columns);
+    }
+
+    for(var i=0; i<rows; i++){
+        for(var j=0; j<columns; j++){
+            matrix[i][j] = Math.floor((Math.random() * 100000));
+        }
+    }
+    
+    var data = new Object()
+    data.matrix = matrix;
+    data.rows = rows;
+    data.columns = columns;
+    return data;
+}
+
+function generateTableFromMatrix(matrix){
+    var section = document.getElementById("table-section");
+    var table = document.createElement("table");
+
+    for(var i=0; i<matrix.rows; i++){
+        var tr = document.createElement("tr");
+        for(var j=0; j<matrix.columns; j++){
+            
+            var td = document.createElement("td");
+            var content = document.createTextNode(matrix.matrix[i][j]);
+            td.appendChild(content);
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    }
+    section.appendChild(table);
+}
+
+var mat = newRandomMatrix(4,2);
+generateTableFromMatrix(mat);
