@@ -3,6 +3,16 @@ footer,
 section {
   text-align: center;
 }
+.column-two-third {
+  width: 66%;
+  float: left;
+}
+
+.column-third {
+  width: 33%;
+  float: left;
+}
+
 
 .hidden-section {
   visibility: hidden;
@@ -19,6 +29,10 @@ section {
 .error-request {
   color: red;
   border: 1px solid red;
+}
+
+ul li {
+  list-style: none;
 }
 
 

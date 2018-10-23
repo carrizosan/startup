@@ -77,12 +77,13 @@ elem.addEventListener("click", function(){
 */
 
 function printResponse(res) {
-    var section = document.getElementById("hidden-element");
+    var span = document.getElementById("joke-span");
+    span.innerHTML = "";
     var newElement = document.createElement("p");
     var content = JSON.parse(res);
     var joke = document.createTextNode(content.value.joke);
     newElement.appendChild(joke);
-    section.appendChild(newElement);
+    span.appendChild(newElement);
 }
 
 
@@ -123,6 +124,52 @@ elem.addEventListener("click", function(){
     makeAJAXRequest(config).then(resolve => printResponse(resolve))
                         .catch(reject => console.log(reject));
 });
+
+
+// Exersise 4
+// Data fetching with parameters
+
+//search button
+var button = document.getElementById("but-repo");
+
+button.addEventListener("click", function(){
+    var config = configURL('https://api.github.com/search/repositories');
+    repositoriesRequest(config);
+})
+
+
+// This function adds the value to url
+function configURL(url){
+    var config = new Object();
+    var value = document.getElementById("search-repo").value;
+    config.url = url += "?q=" + value;
+    config.method = 'GET';
+    return config;
+}
+
+// Calling reusable AJAX function
+function repositoriesRequest(config) {
+    var promise = makeAJAXRequest(config)
+        .then(resolve => printRepositories(resolve))
+        .catch(reject => console.log(reject));
+}
+
+// Print a list of repositories from AJAX request
+function printRepositories(resolve) {
+    var list = document.getElementById("list-repo");
+    var repos = JSON.parse(resolve);
+    list.innerHTML = "";
+    repos.items.forEach(element => {
+        var newElement = document.createElement("li");
+        var a = document.createElement("a");
+        var link = "https://github.com/" + element.full_name;
+        var content = document.createTextNode(link);
+        a.setAttribute("href", link);
+        a.appendChild(content);
+        newElement.appendChild(a);
+        list.appendChild(newElement);
+    });
+}
 
 
 
@@ -167,5 +214,5 @@ function generateTableFromMatrix(matrix){
     section.appendChild(table);
 }
 
-var mat = newRandomMatrix(4,2);
+var mat = newRandomMatrix(6,2);
 generateTableFromMatrix(mat);
