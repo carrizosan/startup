@@ -1,5 +1,5 @@
 
-class Movie {
+class Movie extends EventEmitter {
     constructor(title, year, duration) {
         this.title = title;
         this.year = year;
@@ -7,15 +7,15 @@ class Movie {
     }
 
     play() {
-        console.log("playing");
+        this.emit("play", this);
     }
 
     pause() {
-        console.log("paused");
+        this.emit("pause", this);
     }
 
     resume() {
-        console.log("resumed");
+        this.emit("resume", this);
     }
 }
 
