@@ -39,11 +39,11 @@ class EventEmitter {
         this.events[eventName].push(callback);
     }
 
-    emit(eventName){
+    emit(eventName, data) {
         const event = this.events[eventName];
-        if(event){
+        if( event ) {
             event.forEach(callback => {
-                callback.call(this);
+            callback.call(null, data);
             });
         }
     }
