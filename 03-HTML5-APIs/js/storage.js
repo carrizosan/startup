@@ -82,7 +82,7 @@ function saveDataIndexedDB(key, value) {
     };
 
     request.onerror = function(event) {
-        console.log("Error");
+        console.log("Error: ");
     };
 }
 

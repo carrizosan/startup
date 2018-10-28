@@ -3,7 +3,17 @@ header {
 }
 
 .content {
-    width: 50%;
+    width: 49%;
     text-align: center;
 }
+
+.main-container {
+    display: inline-block;
+}
+
+div {
+    display: inline-block;
+}
+
+
 

@@ -16,14 +16,20 @@
     <div class="content">
       <h3>Storage</h3>
   
-      <textarea rows="4" cols="80" id="text-area" placeholder="Insert text to save"></textarea>
+      <textarea rows="4" cols="75" id="text-area" placeholder="Insert text to save"></textarea>
       <button type="submit" id="save-btn">Save in Local Storage</button>
       <button type="reset" id="clear-btn">Clear Local Storage</button>
       <button type="submit" id="save-btn-idb">Save IndexedDB</button>
       <button type="reset" id="clear-btn-idb">Clear IndexedDB</button>
     </div>
 
+    <div class="content">
+      <h3>Drag & Drop Files</h3>
+      <textarea rows="10" cols="70" id="drop-area">Drop files here</textarea>
+    </div>
+
   </section>
   <script src="js/storage.js"></script>
+  <script src="js/drag-drop.js"></script>
 </body>
 </html>
