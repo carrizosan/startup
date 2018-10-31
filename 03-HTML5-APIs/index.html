@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HTML5 APIs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  
+</head>
+<body>
+  <header><h1>HTML5 APIs</h1></header>
+  
+  <section class="main-container">
+
+    <div class="content">
+      <h3>Storage</h3>
+  
+      <textarea rows="4" cols="75" id="text-area" placeholder="Insert text to save"></textarea>
+      <button type="submit" id="save-btn">Save in Local Storage</button>
+      <button type="reset" id="clear-btn">Clear Local Storage</button>
+      <button type="submit" id="save-btn-idb">Save IndexedDB</button>
+      <button type="reset" id="clear-btn-idb">Clear IndexedDB</button>
+    </div>
+
+    <div class="content">
+      <h3>Drag & Drop Files</h3>
+      <textarea rows="10" cols="70" id="drop-area">Drop files here</textarea>
+    </div>
+
+    <div class="content">
+      <h3>WebSocket Test</h3>
+      
+      <div class="opt-content">
+        <label class="msg-lbl" for="msg">Message</label>
+        <input id="msg" type="text" value="Rock it with HTML5 WebSocket">
+        <button type="submit" id="ws-send">Send</button>
+      </div>
+      <div class="opt-content">
+        <label class="opt-lbl" for="output">Log:</label>
+        <textarea id="output" cols="50" rows="10"></textarea>
+      </div>
+      
+    </div>
+
+    <div class="content">
+      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Example of a polygon with the default fill -->
+        <polygon points="0,100 50,25 70, 70 120,10" />
+        <!-- Example of another polygon with stroke and no fill -->
+        <polygon points="100,100 150,25 150,75 200,0" fill="none" stroke="red" />
+      </svg>
+    </div>
+    
+
+  </section>
+  <script src="js/storage.js"></script>
+  <script src="js/drag-drop.js"></script>
+  <script src="js/web-socket.js"></script>
+</body>
+</html>
