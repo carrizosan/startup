@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-
+../../02-OOP-inheritance/scripts/
 # testing
 /coverage
 
@@ -23,5 +23,3 @@ yarn-debug.log*
 yarn-error.log*
 
 
-#other
-C:/Users/santk/startup/02-OOP-inheritance/scripts

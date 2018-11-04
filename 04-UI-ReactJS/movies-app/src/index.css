@@ -1,0 +1,23 @@
+.app {
+    margin: 1%;
+}
+
+.new-movie,
+.edit-movie {
+    border: 1px solid black;
+    height: 120px;
+    padding: 1%;
+    margin: 1%;
+}
+
+.movie {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 1%;
+    margin: 1%;
+    
+}
+
+.list {
+    padding: 1%;
+}
