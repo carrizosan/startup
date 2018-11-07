@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, ScrollView, Text, View } from 'react-native';
+import { StyleSheet, ScrollView, Text, View, Image} from 'react-native';
 import BigBox  from './components/bigBox.js';
 import LittleBox from './components/littleBox.js';
 import MediumBox from './components/mediumBox.js';
@@ -12,6 +12,17 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <ScrollView style={styles.mainScroll}>
           <BigBox color="blue"/>
+          <View alignItems="center">
+            <Image
+              style={{width: '100%', height: 50}}
+              source={require('./media/react-native-logo.jpg')}
+            />
+            <Image
+              style={{width: 150, height: 150}}
+              source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
+            /> 
+          </View>
+          
           <Text style={styles.baseText}>
             <Text style={styles.titleText}>
               My app is awesome! ... or not.
@@ -44,7 +55,7 @@ const styles = StyleSheet.create({
   },
 
   mainScroll: {
-    height: '50%',
+    height: '100%',
     backgroundColor: 'orange',
 
   },
