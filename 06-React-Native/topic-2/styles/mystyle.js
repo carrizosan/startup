@@ -5,32 +5,34 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#1597E8',
       alignItems: 'flex-start',
-      justifyContent: 'flex-start',
+      justifyContent: 'space-around',
+      flexDirection: 'column'  // FLEX DIRECTION ROW FOR FIRST LAYOUT (EXERSISE 3)
     },
 
     box1: {
-      margin: 10,
-      width: 70,
-      height: 70,
+      margin: '5%',
+      width: '30%',
+      height: '15%',
       backgroundColor: '#F12B2B'
     },
 
     box2: {
-      margin: 10,
-      width: 120,
-      height: 120,
+      margin: '5%',
+      width: '30%',
+      height: '15%',
       backgroundColor: '#8100E1'
     },
 
     box3: {
-      margin: 10,
-      width: 200,
-      height: 200,
+      margin: '5%',
+      width: '30%',
+      height: '15%',
       backgroundColor: '#FFFFFF'
     },
 
     boxesRadius: {
-      borderRadius: 10
+      borderRadius: 1,
+      marginTop: '10%'
     }
 
 });
