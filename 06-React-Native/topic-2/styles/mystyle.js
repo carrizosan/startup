@@ -3,7 +3,7 @@ import { Platform, StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      justifyContent: 'space-around',
+      justifyContent: 'center',
       flexDirection: 'column',  // FLEX DIRECTION ROW FOR FIRST LAYOUT (EXERSISE 3)
       ...Platform.select({
         ios: {
@@ -38,7 +38,41 @@ const styles = StyleSheet.create({
     boxesRadius: {
       borderRadius: 1,
       margin: '5%'
+    },
+
+    // Exersise 7 sytles:
+    article: {
+      width: '100%',
+      backgroundColor: '#FFFFFF',
+      borderStyle: 'solid',
+      borderWidth: 1,
+      marginTop: '10%'
+    },
+
+    articleTitle: {
+      fontSize: 15,
+      fontWeight: 'bold',
+      width: '75%'
+    },
+
+    articleAuthor: {
+      color: 'blue'
+    },
+
+    articleContent: {
+      fontSize: 11,
+      width: '75%'
+    },
+
+    articleImage: {
+      width: '25%',
+      height: 100,
+      alignSelf: 'flex-end',
+      position: 'absolute',
+      marginTop: 5
     }
+
+
 
 });
 
