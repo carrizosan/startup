@@ -3,10 +3,10 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'flex-start',
+    backgroundColor: '#CECECE',
+    alignItems: 'center',
     justifyContent: 'center',
-    flexDirection: 'row'
+    flexDirection: 'column',
   },
 
   inputComponent: {
@@ -34,18 +34,68 @@ const styles = StyleSheet.create({
     marginTop: 20,
     borderStyle: 'solid',
     borderWidth: 1,
-    borderRadius: 20,
-    width: '50%',
+    borderRadius: 40,
+    width: '70%',
+    height: 70,
     alignItems: 'center',
-    backgroundColor: 'lightblue'
+    backgroundColor: 'lightblue',
+    justifyContent: 'center',
+    
   },
 
   buttonText: {
     padding: 10,
     color: '#FFF',
     fontSize: 18,
-    fontFamily: 'serif'
+    fontFamily: 'sans-serif-condensed',
+    alignSelf: 'center',
+  },
+
+  primaryButton: {
+    borderWidth: 0,
+    alignItems: 'center',
+    backgroundColor: '#4AC1CD',
+    opacity: .7,
+    elevation: 10
+  },
+
+  primaryText: {
+    padding: 10,
+    color: '#FFF',
+    fontSize: 18,
+    fontFamily: 'normal',
+    alignSelf: 'center',
+  },
+  
+  secondaryButton: {
+    borderColor: '#8785A9',
+    backgroundColor: '#CECECE',
+  },
+
+  secondaryText: {
+    padding: 10,
+    color: '#8785A9',
+    fontSize: 18,
+    fontFamily: 'normal',
+    alignSelf: 'center',  
+  },
+
+  disabledButton: {
+    borderColor: 'rgba(135, 133, 169, .4)',
+    backgroundColor: '#CECECE',
+    
+  },
+
+  disabledText: {
+    padding: 10,
+    color: 'rgba(135, 133, 169, .4)',
+    fontSize: 18,
+    fontFamily: 'normal',
+    alignSelf: 'center',  
   }
+
+  
+
 });
 
 export default styles;
